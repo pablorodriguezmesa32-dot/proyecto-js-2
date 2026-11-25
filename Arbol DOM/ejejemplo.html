@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        /* Contenedor principal de la sección */
+        .seccion-articulos {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .seccion-articulos h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        /* Grid para organizar los 6 artículos */
+        .contenedor-articulos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        /* Estilo individual de cada artículo */
+        .articulo {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .articulo:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .articulo h3 {
+            margin-top: 0;
+            color: #2980b9;
+        }
+
+        .articulo p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .articulo a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #e67e22;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .articulo a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <section class="seccion-articulos">
+        <h2>Últimas Publicaciones</h2>
+
+        <div class="contenedor-articulos">
+            
+            <!-- Artículo 1 -->
+            <article class="articulo">
+                <h3>Artículo 1: Introducción al Desarrollo Web</h3>
+                <p>Descubre los fundamentos de HTML, CSS y JavaScript para comenzar a construir tus primeras páginas web desde cero.</p>
+                <a href="#">Leer más</a>
+            </article>
+
+            <!-- Artículo 2 -->
+            <article class="articulo">
+                <h3>Artículo 2: Diseño Adaptable con CSS Grid</h3>
+                <p>Aprende a crear maquetaciones modernas y adaptables a cualquier pantalla utilizando la potencia de CSS Grid.</p>
+                <a href="#">Leer más</a>
+            </article>
+
+            <!-- Artículo 3 -->
+            <article class="articulo">
+                <h3>Artículo 3: Buenas Prácticas de Accesibilidad</h3>
+                <p>Optimiza tus sitios web para que sean accesibles para todos los usuarios utilizando las etiquetas semánticas de HTML5.</p>
+                <a href="#">Leer más</a>
+            </article>
+
+            <!-- Artículo 4 -->
+            <article class="articulo">
+                <h3>Artículo 4: Optimización y Rendimiento Web</h3>
+                <p>Estrategias clave para mejorar la velocidad de carga de tus páginas y ofrecer una mejor experiencia de usuario.</p>
+                <a href="#">Leer más</a>
+            </article>
+
+            <!-- Artículo 5 -->
+            <article class="articulo">
+                <h3>Artículo 5: Introducción a JavaScript Moderno</h3>
+                <p>Conoce las características de ES6+ que simplificarán tu código y te ayudarán a crear aplicaciones interactivas.</p>
+                <a href="#">Leer más</a>
+            </article>
+
+            <!-- Artículo 6 -->
+            <article class="articulo">
+                <h3>Artículo 6: Consejos de SEO para Desarrolladores</h3>
+                <p>Aprende cómo estructurar correctamente tus documentos HTML para posicionar mejor en los motores de búsqueda.</p>
+                <a href="#">Leer más</a>
+            </article>
+        </div>
+    </section>
+    <button id="btn-borrar-todo">Borrar todos los artículos</button>
+    <script src="ejejemplodom.js"></script>
+</body>
+</html>

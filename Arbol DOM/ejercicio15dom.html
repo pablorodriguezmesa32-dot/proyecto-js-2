@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de su puta madre que largo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .menu-hori{
+            display: flex;
+            background-color: #333;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: relative;
+        }
+
+        .menu-item {
+            color: white;
+            padding: 15px 25px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .menu-item:hover{
+            background-color: #444;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 50px;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(red, green, blue, alpha);
+            border: 1px solid #ccc;
+            z-index: 10;
+        }
+
+        .submenu div {
+            color: black;
+            padding: 10px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .submenu div:hover {
+            background-color: #f1f1f1;
+        }
+
+        .contenido-principal {
+            margin-top: 80px;
+            padding: 20px;
+            background-color: #e2e2e2;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="menu-hori">
+
+        <div>
+            <div id="btnInicio" class="menu-item">Inicio</div>
+            <div id="subInicio" class="submenu">
+                <div>Portada</div>
+                <div>Acerca de mi</div>
+                <div>Mis fotos</div>
+            </div>
+        </div>
+
+        <div>
+            <div id="btnProyectos" class="menu-item">Proyectos</div>
+            <div id="subProyectos" class="submenu">
+                <div>Web Apps</div>
+                <div>Mobile Apps</div>
+                <div>Juegos</div>
+            </div>
+        </div>
+
+        <div>
+            <div id="btnPortfolio" class="menu-item">Portfolio</div>
+            <div id="subPortfolio" class="submenu">
+                <div>Paginas webs</div>
+                <div>Software</div>
+            </div>
+        </div>
+
+        <div>
+            <div id="btnContacto" class="menu-item">Contacto</div>
+        </div>
+    </div>
+
+    <div class="contenido-principal">
+        <h2>Y la queso</h2>
+        <p>Este texto se queda mas estatico que tu cuando tu madre te regaña.</p>
+    </div>
+
+    <script src="ejercicio15dom.js"></script>
+</body>
+</html>

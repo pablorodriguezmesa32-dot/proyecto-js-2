@@ -1,0 +1,44 @@
+/* Primera clase para el párrafo inicial */
+.clase-one {
+    width: 500px;
+    height: 120px;
+    padding: 10px;
+    border: 2px solid #2980b9;
+    font-size: 1.1em;
+    background-color: #ecf0f1;
+    margin-bottom: 15px;
+}
+
+/* Segunda clase para los párrafos generados */
+.clase-dos {
+    width: 500px;
+    height: 120px;
+    padding: 10px;
+    border: 2px solid #e74c3c;
+    font-size: 1.1em;
+    background-color: #fce4ec;
+    margin-bottom: 15px;
+}
+
+/* Estilos visuales para los botones y la tabla generada */
+.contenedor-botones {
+    margin-top: 20px;
+}
+
+button {
+    padding: 8px 15px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+table {
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestor de Tareas</title>
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+            width: 300px;
+        }
+
+        li {
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+        }
+
+        /* Maquetación alternada: pares con fondo verde y texto blanco */
+        li:nth-child(even) {
+            background-color: green;
+            color: white;
+        }
+
+        /* Maquetación alternada: impares con fondo blanco y texto verde */
+        li:nth-child(odd) {
+            background-color: white;
+            color: green;
+            border: 1px solid green;
+        }
+    </style>
+    <script src="ejercicio25dom.js"></script>
+</head>
+<body>
+
+    <ul id="listaTareas">
+        <li>Tarea 1</li>
+        <li>Tarea 2</li>
+        <li>Tarea 3</li>
+        <li>Tarea 4</li>
+        <li>Tarea 5</li>
+        <li>Tarea 6</li>
+        <li>Tarea 7</li>
+    </ul>
+
+    <button id="btnInicio">Añadir Tarea al Inicio</button>
+    <button id="btnFinal">Añadir Tarea al Final</button>
+    <button id="btnEliminarUltima">Eliminar Última Tarea</button>
+    <button id="btnEliminarPrimera">Eliminar Primera Tarea</button>
+
+</body>
+</html>
